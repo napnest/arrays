@@ -2,18 +2,19 @@
 public class multiArray {
 
 
-        static int[][][] multiArray = new int[][][]{{{4, 8, 15}, {16}}, {{23, 42}, {}}, {{1}, {2}, {3}, {4, 5}}};
+        static int[][][] multiArray = new int[][][]{{{10,10,10}, {16}}, {{23, 42}, {}}, {{1}, {2}, {3}, {4, 5}}};
 
         public static void main(String[] args) {
-            for (int i = 0; i < multiArray.length ; i++) {
-                for (int j = 0; j < multiArray[i].length; j++) {
-                    for (int k = 0; k < multiArray[i][j].length ; k++) {
-                        System.out.print(multiArray[i][j][k]+" ");
+            for(int[][]i:multiArray){
+                System.out.print("{ ");
+                for(int[]j:i){
+                    System.out.print(" {  ");
+                    for(int k:j){
+                        System.out.print(k+" ");
                     }
-                    System.out.println(" ");
-
-
+                    System.out.print("  } ");
                 }
+                System.out.print(" }     ");
             }
         }
     }
