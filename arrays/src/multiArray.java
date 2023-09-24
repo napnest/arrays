@@ -8,9 +8,9 @@ public class multiArray {
             for (int i = 0; i < multiArray.length ; i++) {
                 for (int j = 0; j < multiArray[i].length; j++) {
                     for (int k = 0; k < multiArray[i][j].length ; k++) {
-                        System.out.print(multiArray[i][j][k]+" ");
+                        System.out.print(multiArray[i][j][k]);
                     }
-                    System.out.println(" ");
+
 
 
                 }
